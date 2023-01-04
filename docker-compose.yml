@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  counterfeit-museum-front:
+    container_name: counterfeit-museum-front
+    image: counterfeit-museum-front
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 5173:5173
