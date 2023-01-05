@@ -12,7 +12,8 @@
       "vite/client"
     ],
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": "."
   },
   "include": [
     "src",

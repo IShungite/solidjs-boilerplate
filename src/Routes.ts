@@ -4,7 +4,7 @@ import { lazy } from 'solid-js';
 const routesDefinition: RouteDefinition[] = [
   {
     path: '/',
-    component: lazy(() => import('./components/Root/Root')),
+    component: lazy(() => import('./layouts/Root/Root')),
     children: [
       { path: '/', component: lazy(() => import('./pages/Home')) },
       {
@@ -19,7 +19,7 @@ const routesDefinition: RouteDefinition[] = [
   },
   {
     path: '/',
-    component: lazy(() => import('./components/PrivateRoute/PrivateRoute')),
+    component: lazy(() => import('./layouts/PrivateRoute/PrivateRoute')),
     children: [
       { path: '/game', component: lazy(() => import('./pages/Game')) },
     ],
